@@ -1,0 +1,19 @@
+Karthik Murugan | karthik@yemkay.com | http://yemkay.com | @yemkay
+
+Register oAuth app at http://dev.twitter.com and use the consumer key & consumer secret in your call to useOAuth() function.
+
+Receive user access token and access secret by redirecting to Twitter and authenticating. You can use twitteroauth for this purpose (Refer http://github.com/abraham/twitteroauth). For backend scripts, you can obtain access token and secret by clicking "My Access Token" link from the Oauth app page in http://dev.twitter.com
+
+
+Thanks to Abraham Williams & Arc90 for the original libraries
+
+twitteroauth
+------------
+Developed by Abraham Williams. Oauth based Twitter library. Also used for OAuth integration with Twitter
+http://github.com/abraham/twitteroauth
+
+Arc90 Twitter Client
+--------------------
+A powerful Twitter library for REST & Search API, but uses only basic Auth.
+http://blog.arc90.com/2008/06/03/twitter-api-client-released/
+
