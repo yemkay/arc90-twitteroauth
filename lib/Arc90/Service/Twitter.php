@@ -1554,8 +1554,10 @@ function parse_query($var)
 
   foreach($var as $val)
    {
-    $x          = explode('=', $val);
-    $arr[$x[0]] = $x[1];
+    if($val) {
+        $x          = explode('=', $val);
+        $arr[$x[0]] = $x[1];
+    }
    }
   unset($val, $x, $var);
   return $arr;
