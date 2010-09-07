@@ -7,7 +7,7 @@ $twitter = new Arc90_Service_Twitter();
 $twitter->useOAuth('OAUTH_CONSUMER_KEY', 'OAUTH_CONSUMER_SECRET', 'USER_TOKEN', 'USER_SECRET');
 
 //Get tweets from user's timeline
-$response = $this->twitter->getFriendsTimeline('json', $array('count' => 200, 'page' => $page));
+$response = $this->twitter->getFriendsTimeline('json', array('count' => 200, 'page' => $page));
 echo ('HTTP code: '.$response->getHttpCode());
 
 if (!$response->isError())
