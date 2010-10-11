@@ -115,7 +115,7 @@ class TwitterOAuth {/*{{{*/
 	$this->meta = array();
     switch ($method) {
     case 'GET': return $this->http($req->to_url(), $this->meta);
-    case 'POST': return $this->http($req->get_normalized_http_url(), $this->meta, $req->to_postdata());
+    case 'POST': case 'DELETE': return $this->http($req->get_normalized_http_url(), $this->meta, $req->to_postdata());
     }
   }/*}}}*/
 
